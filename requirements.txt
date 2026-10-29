@@ -1,0 +1,19 @@
+# DataCo Supply Chain pipeline notebook
+# Tested with Python 3.12 and the versions noted on the right.
+
+# Core data stack
+numpy>=1.26            # tested 2.4.4
+pandas>=2.1            # tested 3.0.2
+openpyxl>=3.1          # needed by pandas.read_excel for .xlsx (tested 3.1.5)
+
+# Modeling
+scikit-learn>=1.4      # >=1.4 required for HistGradientBoosting categorical_features="from_dtype" (tested 1.8.0)
+lightgbm>=4.0          # optional: notebook falls back to scikit-learn if missing
+
+# Plotting
+matplotlib>=3.8        # tested 3.10.8
+seaborn>=0.13          # tested 0.13.2
+
+# Running the notebook
+jupyterlab>=4.0
+ipykernel>=6.0
